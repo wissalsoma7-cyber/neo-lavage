@@ -1,5 +1,4 @@
-import Splash from "./pages/Splash";
-
+import Home from "./pages/Home";
 export default function App() {
 return <Home />;
 }
