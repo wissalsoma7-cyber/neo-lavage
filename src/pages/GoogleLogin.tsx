@@ -1,4 +1,8 @@
-export default function GoogleLogin() {
+export default function GoogleLogin({
+  onContinue,
+}: {
+  onContinue: () => void;
+}) {
   return (
     <div
       style={{
@@ -19,9 +23,11 @@ export default function GoogleLogin() {
 
       <button>Annuler</button>
 
-      <button onClick={() => alert("Notifications")}>
-        Continuer
-      </button>
+      export default function GoogleLogin({
+  onContinue,
+}: {
+  onContinue: () => void;
+}) {
     </div>
   );
 }
