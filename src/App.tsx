@@ -29,11 +29,12 @@ import WasherProfile from "./pages/WasherProfile";
 import Confirmation from "./pages/Confirmation";
 export default function App() {
   const [page, setPage] = useState<
+  
+    | "home"
+    | "google"
     | "apple"
     | "email"
     | "verification"
-    | "home"
-    | "google"
     | "notifications"
     | "location"
     | "cookies"
@@ -42,6 +43,7 @@ export default function App() {
     | "booking"
     | "washer"
     | "confirmation"
+    
   >("home");
 
   if (page === "google")
@@ -92,6 +94,7 @@ if (page === "verification")
 setPage("notifications")}
     />
   );
+  
   return 
     <Home 
       onGoogle={() => 
