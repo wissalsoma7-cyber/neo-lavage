@@ -19,6 +19,9 @@ export default function App() {
     | "maps"
     | "vehicle"
     | "booking"
+    | "booking"
+    | "washer"
+    | "confirmation"
   >("home");
 
   if (page === "google") {
