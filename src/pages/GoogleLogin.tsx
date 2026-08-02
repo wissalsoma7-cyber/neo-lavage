@@ -12,7 +12,7 @@ export default function GoogleLogin({
         alignItems: "center",
         flexDirection: "column",
         background: "#F4F9FF",
-        padding: 20
+        padding: 20,
       }}
     >
       <h2>Connexion Google</h2>
@@ -23,11 +23,9 @@ export default function GoogleLogin({
 
       <button>Annuler</button>
 
-      export default function GoogleLogin({
-  onContinue,
-}: {
-  onContinue: () => void;
-}) {
+      <button onClick={onContinue}>
+        Continuer
+      </button>
     </div>
   );
 }
