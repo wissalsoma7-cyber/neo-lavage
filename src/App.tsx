@@ -52,6 +52,9 @@ export default function App() {
 
   if (page === "washer")
     return <WasherProfile />;
+  
+  if (page ===payment")
+    return <payment/>;
 
   if (page === "confirmation")
     return <Confirmation />;
