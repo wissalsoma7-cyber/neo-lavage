@@ -1,3 +1,23 @@
+if (page === "apple")
+  return (
+    <AppleLogin
+      onContinue={() => setPage("notifications")}
+    />
+  );
+
+if (page === "email")
+  return (
+    <EmailLogin
+      onContinue={() => setPage("verification")}
+    />
+  );
+
+if (page === "verification")
+  return (
+    <CodeVerification
+      onContinue={() => setPage("notifications")}
+    />
+  );
 import AppleLogin from "./pages/AppleLogin";
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
