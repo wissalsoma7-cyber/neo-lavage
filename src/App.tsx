@@ -1,3 +1,5 @@
+import EmailLogin from "./pages/EmailLogin";
+import CodeVerification from "./pages/CodeVerification";
 import { useState } from "react";
 
 import Home from "./pages/Home";
