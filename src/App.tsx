@@ -17,7 +17,6 @@ if (page === "verification")
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
 import { useState } from "react";
-
 import Home from "./pages/Home";
 import GoogleLogin from "./pages/GoogleLogin";
 import Notifications from "./pages/Notifications";
@@ -28,7 +27,6 @@ import VehicleSelection from "./pages/VehicleSelection";
 import Booking from "./pages/Booking";
 import WasherProfile from "./pages/WasherProfile";
 import Confirmation from "./pages/Confirmation";
-
 export default function App() {
   const [page, setPage] = useState<
     | "apple"
