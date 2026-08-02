@@ -1,33 +1,18 @@
+import Splash from "./pages/Splash";
+import Home from "./pages/Home";
+import GoogleLogin from "./pages/GoogleLogin";
+import Notifications from "./pages/Notifications";
+import Location from "./pages/Location";
+import GoogleMaps from "./pages/GoogleMaps";
+import VehicleSelection from "./pages/VehicleSelection";
+import Booking from "./pages/Booking";
+import WasherProfile from "./pages/WasherProfile";
+import Confirmation from "./pages/Confirmation";
+import History from "./pages/History";
+import Settings from "./pages/Settings";
+
 export default function App() {
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "#ffffff",
-        fontFamily: "Arial"
-      }}
-    >
-      <div style={{ textAlign: "center" }}>
-        <h1 style={{ color: "#0A84FF" }}>NÉO LAVAGE</h1>
-        <p>Lavage professionnel à domicile</p>
-
-        <button>Continuer avec Google</button>
-
-        <br /><br />
-
-        <button>Continuer avec Apple</button>
-
-        <br /><br />
-
-        <button>Essayer sans e-mail</button>
-
-        <br /><br />
-
-        <button>Partager Néo Lavage</button>
-      </div>
-    </div>
+    <Splash />
   );
 }
