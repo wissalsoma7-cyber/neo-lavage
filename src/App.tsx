@@ -1,7 +1,6 @@
 import AppleLogin from "./pages/AppleLogin";
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
-import EmailLogin from "./pages/EmailLogin";
 import Home from "./pages/Home";
 import GoogleLogin from "./pages/GoogleLogin";
 import Notifications from "./pages/Notifications";
@@ -14,7 +13,6 @@ import WasherProfile from "./pages/WasherProfile";
 import Confirmation from "./pages/Confirmation";
 export default function App() {
   const [page, setPage] = useState<
-  
     | "home"
     | "google"
     | "apple"
@@ -27,8 +25,7 @@ export default function App() {
     | "vehicle"
     | "booking"
     | "washer"
-    | "confirmation"
-    
+    | "confirmation" 
   >("home");
 
   if (page === "google")
@@ -75,11 +72,10 @@ if (page === "email")
 if (page === "verification")
   return (
     <CodeVerification
-      onContinue={() => 
-setPage("notifications")}
+      onContinue={() => setPage("notifications")}
     />
   );
-  
+
   return 
     <Home 
       onGoogle={() => 
