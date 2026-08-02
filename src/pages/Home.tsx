@@ -16,7 +16,9 @@ export default function Home() {
         NÉO LAVAGE
       </h1>
 
-      <button>Continuer avec Google</button>
+      <button onClick={() => alert("Connexion Google")}>
+  Continuer avec Google
+</button>
 
       <button>Continuer avec Apple</button>
 
