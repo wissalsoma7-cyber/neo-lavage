@@ -1,4 +1,6 @@
-export default function Home() {
+export default function 
+  Home({ onGoogle }: { onGoogle: () => 
+                      void}) {
   return (
     <div
       style={{
@@ -16,7 +18,7 @@ export default function Home() {
         NÉO LAVAGE
       </h1>
 
-      <button onClick={() => alert("Connexion Google")}>
+      <button onClick={onGoogle}>
   Continuer avec Google
 </button>
 
