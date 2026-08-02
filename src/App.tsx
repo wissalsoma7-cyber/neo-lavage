@@ -91,10 +91,9 @@ if (page === "verification")
   );
 
   return (
-    <Home 
-      onGoogle={() => 
-      setPage("google")} 
-      />
-    );
-      
-
+  <Home
+    onGoogle={() => setPage("google")}
+    onApple={() => setPage("apple")}
+    onEmail={() => setPage("email")}
+  />
+);
