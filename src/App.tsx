@@ -31,9 +31,9 @@ import Confirmation from "./pages/Confirmation";
 
 export default function App() {
   const [page, setPage] = useState<
-    "apple"
-"email"
-"verification"
+    | "apple"
+    | "email"
+    | "verification"
     | "home"
     | "google"
     | "notifications"
