@@ -1,3 +1,16 @@
+if (page === "email")
+  return (
+    <EmailLogin
+      onContinue={() => setPage("verification")}
+    />
+  );
+
+if (page === "verification")
+  return (
+    <CodeVerification
+      onContinue={() => setPage("notifications")}
+    />
+  );
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
 import { useState } from "react";
