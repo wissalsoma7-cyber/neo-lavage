@@ -1,3 +1,4 @@
+import Tracking from "./pages/Tracking";
 import AppleLogin from "./pages/AppleLogin";
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
@@ -13,7 +14,7 @@ import WasherProfile from "./pages/WasherProfile";
 import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
 export default function App() {
-  const [page, setPage] = useState<
+  const [page, setPage] = useState<"tracking"
     | "home"
     | "google"
     | "apple"
@@ -27,7 +28,8 @@ export default function App() {
     | "booking"
     | "washer"
     | "payment"
-    | "confirmation" 
+    | "confirmation"
+    | "tracking"
   >("home");
 
   if (page === "google")
@@ -67,7 +69,12 @@ export default function App() {
   );
   
   if (page === "confirmation")
-    return <Confirmation />;
+  return (
+    <Confirmation
+      onContinue={() => 
+  setPage("tracking")}
+    />
+  );
 
   if (page === "apple")
   return (
