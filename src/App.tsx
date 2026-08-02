@@ -75,6 +75,13 @@ export default function App() {
   setPage("tracking")}
     />
   );
+  
+  if (page === "tracking")
+  return (
+    <Tracking
+      onContinue={() => setPage("history")}
+    />
+  );
 
   if (page === "apple")
   return (
