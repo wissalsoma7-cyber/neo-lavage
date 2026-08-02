@@ -10,8 +10,8 @@ import GoogleMaps from "./pages/GoogleMaps";
 import VehicleSelection from "./pages/VehicleSelection";
 import Booking from "./pages/Booking";
 import WasherProfile from "./pages/WasherProfile";
-import Confirmation from "./pages/Confirmation";
 import Payment from "./pages/Payment";
+import Confirmation from "./pages/Confirmation";
 export default function App() {
   const [page, setPage] = useState<
     | "home"
@@ -51,7 +51,11 @@ export default function App() {
     return <Booking />;
 
   if (page === "washer")
-    return <WasherProfile />;
+  return (
+    <WasherProfile
+      onContinue={() => setPage("payment")}
+    />
+  );
   
   if (page ===payment")
     return <payment/>;
