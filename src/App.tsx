@@ -1,23 +1,3 @@
-if (page === "apple")
-  return (
-    <AppleLogin
-      onContinue={() => setPage("notifications")}
-    />
-  );
-
-if (page === "email")
-  return (
-    <EmailLogin
-      onContinue={() => setPage("verification")}
-    />
-  );
-
-if (page === "verification")
-  return (
-    <CodeVerification
-      onContinue={() => setPage("notifications")}
-    />
-  );
 import AppleLogin from "./pages/AppleLogin";
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
@@ -51,6 +31,9 @@ import Confirmation from "./pages/Confirmation";
 
 export default function App() {
   const [page, setPage] = useState<
+    "apple"
+"email"
+"verification"
     | "home"
     | "google"
     | "notifications"
@@ -90,5 +73,24 @@ export default function App() {
   if (page === "confirmation")
     return <Confirmation />;
 
-  return <Home onGoogle={() => setPage("google")} />;
+  if (page === "apple")
+  return (
+    <AppleLogin
+      onContinue={() => setPage("notifications")}
+    />
+  );
+
+if (page === "email")
+  return (
+    <EmailLogin
+      onContinue={() => setPage("verification")}
+    />
+  );
+
+if (page === "verification")
+  return (
+    <CodeVerification
+      onContinue={() => setPage("notifications")}
+    />
+  );return <Home onGoogle={() => setPage("google")} />;
 }
