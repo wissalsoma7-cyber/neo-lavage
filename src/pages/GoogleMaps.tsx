@@ -1,4 +1,8 @@
-export default function GoogleMaps() {
+export default function GoogleMaps({
+  onContinue,
+}: {
+  onContinue: () => void;
+}) {
   return (
     <div
       style={{
@@ -8,17 +12,18 @@ export default function GoogleMaps() {
         alignItems: "center",
         flexDirection: "column",
         background: "#F4F9FF",
-        padding: 20
+        padding: 20,
       }}
     >
       <h2>Google Maps</h2>
 
       <p>
-        Les laveurs disponibles autour de vous
-        apparaîtront ici.
+        Les laveurs disponibles autour de vous seront affichés ici.
       </p>
 
-      <button>Rechercher un laveur</button>
+      <button onClick={onContinue}>
+        Choisir un véhicule
+      </button>
     </div>
   );
 }
