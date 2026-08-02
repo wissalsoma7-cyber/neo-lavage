@@ -1,8 +1,12 @@
-export default function Home({
+ {export default function Home({
   onGoogle,
+  onApple,
+  onEmail,
 }: {
   onGoogle: () => void;
-}) {
+  onApple: () => void;
+  onEmail: () => void;
+})
   return (
     <div
       style={{
@@ -31,14 +35,14 @@ export default function Home({
 
       <br />
 
-      <button>
+      <button onClick={onApple}>
         Continuer avec Apple
       </button>
 
       <br />
 
-      <button>
-        Continuer avec votre adresse e-mail
+      <button onClick={onEmail}>
+  Continuer avec votre adresse e-mail
       </button>
 
       <br />
