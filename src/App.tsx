@@ -1,22 +1,7 @@
 import AppleLogin from "./pages/AppleLogin";
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
-if (page === "email")
-  return (
-    <EmailLogin
-      onContinue={() => setPage("verification")}
-    />
-  );
-
-if (page === "verification")
-  return (
-    <CodeVerification
-      onContinue={() => setPage("notifications")}
-    />
-  );
 import EmailLogin from "./pages/EmailLogin";
-import CodeVerification from "./pages/CodeVerification";
-import { useState } from "react";
 import Home from "./pages/Home";
 import GoogleLogin from "./pages/GoogleLogin";
 import Notifications from "./pages/Notifications";
