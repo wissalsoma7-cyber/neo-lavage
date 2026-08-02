@@ -2,15 +2,15 @@ export default function Home() {
   return (
     <div
       style={{
-        padding: 20,
+        minHeight: "100vh",
         background: "#F4F9FF",
-        minHeight: "100vh"
+        padding: 20
       }}
     >
       <h1
         style={{
-          color: "#0A84FF",
-          textAlign: "center"
+          textAlign: "center",
+          color: "#0A84FF"
         }}
       >
         NÉO LAVAGE
