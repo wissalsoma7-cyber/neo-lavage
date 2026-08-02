@@ -60,8 +60,7 @@ export default function App() {
   );
 
   if (page === "payment")
-  return (
-    <Payment
+  return (<Payment
       onContinue={() => 
   setPage("confirmation")}
     />
