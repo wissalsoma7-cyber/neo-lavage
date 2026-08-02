@@ -5,18 +5,22 @@ import GoogleLogin from "./pages/GoogleLogin";
 import Notifications from "./pages/Notifications";
 import Location from "./pages/Location";
 import GoogleMaps from "./pages/GoogleMaps";
+import VehicleSelection from "./pages/VehicleSelection";
 
 export default function App() {
   const [page, setPage] = useState<
-    "home" | "google" | "notifications" | "location" | "maps"
+    | "home"
+    | "google"
+    | "notifications"
+    | "location"
+    | "maps"
+    | "vehicle"
   >("home");
 
   if (page === "google") {
     return (
       <GoogleLogin
-        onContinue={() => {
-          setPage("notifications");
-        }}
+        onContinue={() => setPage("notifications")}
       />
     );
   }
@@ -24,9 +28,7 @@ export default function App() {
   if (page === "notifications") {
     return (
       <Notifications
-        onContinue={() => {
-          setPage("location");
-        }}
+        onContinue={() => setPage("location")}
       />
     );
   }
@@ -34,22 +36,26 @@ export default function App() {
   if (page === "location") {
     return (
       <Location
-        onContinue={() => {
-          setPage("maps");
-        }}
+        onContinue={() => setPage("maps")}
       />
     );
   }
 
   if (page === "maps") {
-    return <GoogleMaps />;
+    return (
+      <GoogleMaps
+        onContinue={() => setPage("vehicle")}
+      />
+    );
+  }
+
+  if (page === "vehicle") {
+    return <VehicleSelection />;
   }
 
   return (
     <Home
-      onGoogle={() => {
-        setPage("google");
-      }}
+      onGoogle={() => setPage("google")}
     />
   );
 }
