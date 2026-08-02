@@ -6,6 +6,7 @@ import Notifications from "./pages/Notifications";
 import Location from "./pages/Location";
 import GoogleMaps from "./pages/GoogleMaps";
 import VehicleSelection from "./pages/VehicleSelection";
+import Booking from "./pages/Booking";
 
 export default function App() {
   const [page, setPage] = useState<
@@ -15,47 +16,32 @@ export default function App() {
     | "location"
     | "maps"
     | "vehicle"
+    | "booking"
   >("home");
 
   if (page === "google") {
-    return (
-      <GoogleLogin
-        onContinue={() => setPage("notifications")}
-      />
-    );
+    return <GoogleLogin onContinue={() => setPage("notifications")} />;
   }
 
   if (page === "notifications") {
-    return (
-      <Notifications
-        onContinue={() => setPage("location")}
-      />
-    );
+    return <Notifications onContinue={() => setPage("location")} />;
   }
 
   if (page === "location") {
-    return (
-      <Location
-        onContinue={() => setPage("maps")}
-      />
-    );
+    return <Location onContinue={() => setPage("maps")} />;
   }
 
   if (page === "maps") {
-    return (
-      <GoogleMaps
-        onContinue={() => setPage("vehicle")}
-      />
-    );
+    return <GoogleMaps onContinue={() => setPage("vehicle")} />;
   }
 
   if (page === "vehicle") {
-    return <VehicleSelection />;
+    return <VehicleSelection onContinue={() => setPage("booking")} />;
   }
 
-  return (
-    <Home
-      onGoogle={() => setPage("google")}
-    />
-  );
+  if (page === "booking") {
+    return <Booking />;
+  }
+
+  return <Home onGoogle={() => setPage("google")} />;
 }
