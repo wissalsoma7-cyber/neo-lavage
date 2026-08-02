@@ -88,7 +88,13 @@ if (page === "email")
 if (page === "verification")
   return (
     <CodeVerification
-      onContinue={() => setPage("notifications")}
+      onContinue={() => 
+setPage("notifications")}
     />
-  );return <Home onGoogle={() => setPage("google")} />;
-}
+  );
+  return 
+    <Home 
+      onGoogle={() => 
+      setPage("google")} 
+      />;
+     } 
