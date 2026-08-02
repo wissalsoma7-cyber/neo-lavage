@@ -1,4 +1,4 @@
-export default function Booking() {
+export default function Confirmation() {
   return (
     <div
       style={{
@@ -11,13 +11,13 @@ export default function Booking() {
         padding: 20,
       }}
     >
-      <h2>Réservation</h2>
+      <h2>Réservation confirmée</h2>
 
       <p>
-        Choisissez votre date et votre heure de lavage.
+        Votre demande de lavage a été enregistrée avec succès.
       </p>
 
-      <button>Continuer</button>
+      <button>Retour à l'accueil</button>
     </div>
   );
 }
