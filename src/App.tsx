@@ -53,13 +53,19 @@ export default function App() {
   if (page === "washer")
   return (
     <WasherProfile
-      onContinue={() => setPage("payment")}
+      onContinue={() => 
+  setPage("payment")}
+    />
+  );
+
+  if (page === "payment")
+  return (
+    <Payment
+      onContinue={() => 
+  setPage("confirmation")}
     />
   );
   
-  if (page ===payment")
-    return <payment/>;
-
   if (page === "confirmation")
     return <Confirmation />;
 
