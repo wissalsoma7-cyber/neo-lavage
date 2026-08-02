@@ -1,4 +1,8 @@
-export default function Location() {
+export default function Location({
+  onContinue,
+}: {
+  onContinue: () => void;
+}) {
   return (
     <div
       style={{
@@ -8,17 +12,18 @@ export default function Location() {
         alignItems: "center",
         flexDirection: "column",
         background: "#F4F9FF",
-        padding: 20
+        padding: 20,
       }}
     >
       <h2>Localisation</h2>
 
       <p>
-        Autorisez Néo Lavage à accéder à votre position
-        afin de trouver les laveurs proches de vous.
+        Autorisez Néo Lavage à accéder à votre position.
       </p>
 
-      <button>Autoriser la localisation</button>
+      <button onClick={onContinue}>
+        Autoriser
+      </button>
 
       <button>Plus tard</button>
     </div>
