@@ -8,17 +8,14 @@ export default function Booking() {
         alignItems: "center",
         flexDirection: "column",
         background: "#F4F9FF",
-        padding: 20
+        padding: 20,
       }}
     >
       <h2>Réservation</h2>
 
       <p>
-        Choisissez le type de véhicule, la date et l'heure
-        du lavage.
+        Choisissez votre date et votre heure de lavage.
       </p>
-
-      <button>Choisir un véhicule</button>
 
       <button>Continuer</button>
     </div>
