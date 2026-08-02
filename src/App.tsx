@@ -1,3 +1,6 @@
+import AppleLogin from "./pages/AppleLogin";
+import EmailLogin from "./pages/EmailLogin";
+import CodeVerification from "./pages/CodeVerification";
 if (page === "email")
   return (
     <EmailLogin
