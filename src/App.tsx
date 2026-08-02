@@ -76,9 +76,11 @@ if (page === "verification")
     />
   );
 
-  return 
+  return (
     <Home 
       onGoogle={() => 
       setPage("google")} 
-      />;
-     } 
+      />
+    );
+      
+
