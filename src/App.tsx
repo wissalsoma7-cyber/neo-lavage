@@ -1,5 +1,7 @@
+import Booking from "./pages/Booking";
+import WasherProfile from "./pages/WasherProfile";
+import Confirmation from "./pages/Confirmation";
 import { useState } from "react";
-
 import Home from "./pages/Home";
 import GoogleLogin from "./pages/GoogleLogin";
 import Notifications from "./pages/Notifications";
