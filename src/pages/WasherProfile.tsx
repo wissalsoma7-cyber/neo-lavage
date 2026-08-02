@@ -1,4 +1,4 @@
-export default function WasherProfile() {
+export default function Booking() {
   return (
     <div
       style={{
@@ -8,16 +8,14 @@ export default function WasherProfile() {
         alignItems: "center",
         flexDirection: "column",
         background: "#F4F9FF",
-        padding: 20
+        padding: 20,
       }}
     >
-      <h2>Profil du laveur</h2>
+      <h2>Réservation</h2>
 
-      <p>Informations du laveur sélectionné.</p>
-
-      <button>Appeler</button>
-
-      <button>WhatsApp</button>
+      <p>
+        Choisissez votre date et votre heure de lavage.
+      </p>
 
       <button>Continuer</button>
     </div>
