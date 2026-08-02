@@ -7,12 +7,11 @@ export default function Splash() {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF"
+        background: "#0A84FF",
+        color: "white"
       }}
     >
-      <h1 style={{ color: "#0A84FF" }}>NÉO LAVAGE</h1>
-
-      <p>Lavage professionnel à domicile</p>
+      <h1>NÉO LAVAGE</h1>
 
       <p>Chargement...</p>
     </div>
