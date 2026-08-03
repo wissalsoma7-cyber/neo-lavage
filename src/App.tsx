@@ -30,8 +30,8 @@ export default function App() {
     | "washer"
     | "payment"
     | "confirmation"
-      "tracking"
-      "history"
+    | "tracking"
+    |  "history"
   >("home");
 
   if (page === "google")
