@@ -82,7 +82,10 @@ export default function App() {
       onContinue={() => setPage("history")}
     />
   );
-
+  
+if (page === "history")
+  
+  return <History />;
   if (page === "apple")
   return (
     <AppleLogin
