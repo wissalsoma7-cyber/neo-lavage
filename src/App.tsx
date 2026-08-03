@@ -33,7 +33,7 @@ export default function App() {
     | "confirmation"
     | "tracking"
     | "history"
-    |  "rating"
+    | "rating"
   >("home");
 
   if (page === "google")
@@ -108,14 +108,14 @@ if (page === "history")
     />
   );
 
-if (page === "email")
+  if (page === "email")
   return (
     <EmailLogin
       onContinue={() => setPage("verification")}
     />
   );
 
-if (page === "verification")
+  if (page === "verification")
   return (
     <CodeVerification
       onContinue={() => setPage("notifications")}
