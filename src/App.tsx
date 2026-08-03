@@ -1,3 +1,4 @@
+import BookingSummary from "./pages/BookingSummary";
 import Rating from "./pages/Rating";
 import Tracking from "./pages/Tracking";
 import History from "./pages/History";
@@ -30,6 +31,7 @@ export default function App() {
     | "washerlist"
     | "vehicle"
     | "booking"
+    |  "bookingsummary"
     | "washer"
     | "payment"
     | "confirmation"
@@ -70,7 +72,20 @@ export default function App() {
     return <VehicleSelection onContinue={() => setPage("booking")} />;
 
   if (page === "booking")
-    return <Booking />;
+  return (
+    <Booking
+      onContinue={() => 
+        setPage("bookingsummary")}
+    />
+  );
+
+  if (page === "bookingsummary")
+  return (
+    <BookingSummary
+      onContinue={() => 
+  setPage("washer")}  
+      />
+  );
 
   if (page === "washer")
   return (
