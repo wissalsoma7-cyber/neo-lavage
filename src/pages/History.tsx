@@ -1,6 +1,12 @@
-export default function History() {
-  return (
-    <div
+export default function History({
+  onContinue,
+}: {
+  onContinue: () => void;
+})
+  <button onClick={onContinue}>
+  Évaluer ce lavage
+</button>
+    {<div
       style={{
         height: "100vh",
         display: "flex",
