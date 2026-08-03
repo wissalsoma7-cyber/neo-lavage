@@ -93,6 +93,7 @@ if (page === "history")
       onContinue={() => setPage("rating")}
     />
   );
+  
   if (page === "rating")
   return (
     <Rating
