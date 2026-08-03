@@ -10,6 +10,7 @@ import Notifications from "./pages/Notifications";
 import Location from "./pages/Location";
 import Cookies from "./pages/Cookies";
 import GoogleMaps from "./pages/GoogleMaps";
+import WasherList from "./pages/WasherList";
 import VehicleSelection from "./pages/VehicleSelection";
 import Booking from "./pages/Booking";
 import WasherProfile from "./pages/WasherProfile";
@@ -26,6 +27,7 @@ export default function App() {
     | "location"
     | "cookies"
     | "maps"
+    | "washerlist"
     | "vehicle"
     | "booking"
     | "washer"
@@ -49,8 +51,21 @@ export default function App() {
     return <Cookies onContinue={() => setPage("maps")} />;
 
   if (page === "maps")
-    return <GoogleMaps onContinue={() => setPage("vehicle")} />;
+  return (
+    <GoogleMaps
+      onContinue={() => 
+        setPage("washerlist")}
+    />
+  );
 
+  if (page === "washerlist")
+  return (
+    <WasherList
+      onContinue={() => setPage("vehicle")}
+    />
+  );
+
+  
   if (page === "vehicle")
     return <VehicleSelection onContinue={() => setPage("booking")} />;
 
