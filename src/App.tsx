@@ -31,7 +31,7 @@ export default function App() {
     | "washerlist"
     | "vehicle"
     | "booking"
-    |  "bookingsummary"
+    | "bookingsummary"
     | "washer"
     | "payment"
     | "confirmation"
