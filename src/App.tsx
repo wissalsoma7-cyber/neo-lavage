@@ -1,4 +1,5 @@
 import Tracking from "./pages/Tracking";
+import History from "./pages/History";
 import AppleLogin from "./pages/AppleLogin";
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
