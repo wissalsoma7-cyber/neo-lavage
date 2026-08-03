@@ -1,4 +1,3 @@
-import BookingSummary from "./pages/BookingSummary";
 import Rating from "./pages/Rating";
 import Tracking from "./pages/Tracking";
 import History from "./pages/History";
@@ -14,6 +13,7 @@ import GoogleMaps from "./pages/GoogleMaps";
 import WasherList from "./pages/WasherList";
 import VehicleSelection from "./pages/VehicleSelection";
 import Booking from "./pages/Booking";
+import BookingSummary from "./pages/BookingSummary";
 import WasherProfile from "./pages/WasherProfile";
 import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
