@@ -1,3 +1,4 @@
+import Rating from "./pages/Rating";
 import Tracking from "./pages/Tracking";
 import History from "./pages/History";
 import AppleLogin from "./pages/AppleLogin";
@@ -31,7 +32,8 @@ export default function App() {
     | "payment"
     | "confirmation"
     | "tracking"
-    |  "history"
+    | "history"
+    |  "rating"
   >("home");
 
   if (page === "google")
@@ -86,8 +88,18 @@ export default function App() {
   );
   
 if (page === "history")
+  return (
+    <History
+      onContinue={() => setPage("rating")}
+    />
+  );
+  if (page === "rating")
+  return (
+    <Rating
+      onContinue={() => setPage("home")}
+    />
+  );
   
-  return <History />;
   if (page === "apple")
   return (
     <AppleLogin
