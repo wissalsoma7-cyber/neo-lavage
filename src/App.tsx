@@ -1,3 +1,4 @@
+import WasherDetails from "./pages/WasherDetails";
 import Rating from "./pages/Rating";
 import Tracking from "./pages/Tracking";
 import History from "./pages/History";
@@ -14,7 +15,6 @@ import WasherList from "./pages/WasherList";
 import VehicleSelection from "./pages/VehicleSelection";
 import Booking from "./pages/Booking";
 import BookingSummary from "./pages/BookingSummary";
-import WasherProfile from "./pages/WasherProfile";
 import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
 export default function App() {
@@ -89,9 +89,8 @@ export default function App() {
 
   if (page === "washer")
   return (
-    <WasherProfile
-      onContinue={() => 
-  setPage("payment")}
+    <WasherDetails
+      onContinue={() => setPage("payment")}
     />
   );
 
