@@ -8,20 +8,16 @@ export default function AppleLogin({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
       <h2>Connexion Apple</h2>
 
-      <button>Choisir un compte Apple</button>
-
-      <button>Utiliser un autre compte</button>
-
-      <button>Annuler</button>
+      <p>Sélectionnez votre compte Apple.</p>
 
       <button onClick={onContinue}>
         Continuer
