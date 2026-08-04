@@ -8,24 +8,22 @@ export default function Location({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
       <h2>Localisation</h2>
 
       <p>
-        Autorisez Néo Lavage à accéder à votre position.
+        Autorisez l'accès à votre position afin de trouver les laveurs proches de vous.
       </p>
 
       <button onClick={onContinue}>
-        Autoriser
+        Autoriser la localisation
       </button>
-
-      <button>Plus tard</button>
     </div>
   );
 }
