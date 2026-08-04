@@ -41,19 +41,23 @@ export default function App() {
   >("home");
 
   if (page === "google")
-    return <GoogleLogin onContinue={() => 
+    return <GoogleLogin 
+             onContinue={() => 
       setPage("notifications")} />;
 
   if (page === "notifications")
-    return <Notifications onContinue={() => 
+    return <Notifications 
+             onContinue={() => 
       setPage("location")} />;
 
   if (page === "location")
-    return <Location onContinue={() => 
+    return <Location 
+             onContinue={() => 
       setPage("cookies")} />;
 
   if (page === "cookies")
-    return <Cookies onContinue={() => 
+    return <Cookies 
+             onContinue={() => 
       setPage("maps")} />;
 
   if (page === "maps")
@@ -74,7 +78,8 @@ export default function App() {
 
   
   if (page === "vehicle")
-    return <VehicleSelection onContinue={() => 
+    return <VehicleSelection 
+             onContinue={() => 
       setPage("booking")} />;
 
   if (page === "booking")
@@ -119,42 +124,48 @@ export default function App() {
   if (page === "tracking")
   return (
     <Tracking
-      onContinue={() => setPage("history")}
+      onContinue={() => 
+        setPage("history")}
     />
   );
   
 if (page === "history")
   return (
     <History
-      onContinue={() => setPage("rating")}
+      onContinue={() => 
+        setPage("rating")}
     />
   );
   
   if (page === "rating")
   return (
     <Rating
-      onContinue={() => setPage("home")}
+      onContinue={() => 
+        setPage("home")}
     />
   );
   
   if (page === "apple")
   return (
     <AppleLogin
-      onContinue={() => setPage("notifications")}
+      onContinue={() => 
+        setPage("notifications")}
     />
   );
 
   if (page === "email")
   return (
     <EmailLogin
-      onContinue={() => setPage("verification")}
+      onContinue={() => 
+        setPage("verification")}
     />
   );
 
   if (page === "verification")
   return (
     <CodeVerification
-      onContinue={() => setPage("notifications")}
+      onContinue={() => 
+        setPage("notifications")}
     />
   );
 
