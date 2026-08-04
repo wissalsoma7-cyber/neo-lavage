@@ -14,7 +14,7 @@ import Booking from "./pages/Booking";
 import BookingSummary from "./pages/BookingSummary";
 import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
-import Rating from "./pages/Rating";
+import tracking from "./pages/tracking";
 import History from "./pages/History";
 import Rating from "./pages/Rating";
 export default function App() {
