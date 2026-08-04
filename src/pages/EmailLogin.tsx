@@ -8,11 +8,11 @@ export default function EmailLogin({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
       <h2>Connexion par e-mail</h2>
@@ -23,7 +23,7 @@ export default function EmailLogin({
       />
 
       <button onClick={onContinue}>
-        Recevoir un code
+        Recevoir le code
       </button>
     </div>
   );
