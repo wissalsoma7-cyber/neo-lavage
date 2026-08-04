@@ -33,6 +33,7 @@ export default function App() {
     | "booking"
     | "bookingsummary"
     | "washer"
+    | WasherDetails"
     | "payment"
     | "confirmation"
     | "tracking"
