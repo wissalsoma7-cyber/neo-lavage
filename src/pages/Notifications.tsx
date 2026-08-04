@@ -8,24 +8,22 @@ export default function Notifications({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
       <h2>Notifications</h2>
 
       <p>
-        Néo Lavage souhaite vous envoyer des notifications.
+        Autorisez Néo Lavage à vous envoyer des notifications concernant vos réservations.
       </p>
 
       <button onClick={onContinue}>
         Autoriser
       </button>
-
-      <button>Plus tard</button>
     </div>
   );
 }
