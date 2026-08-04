@@ -41,16 +41,20 @@ export default function App() {
   >("home");
 
   if (page === "google")
-    return <GoogleLogin onContinue={() => setPage("notifications")} />;
+    return <GoogleLogin onContinue={() => 
+      setPage("notifications")} />;
 
   if (page === "notifications")
-    return <Notifications onContinue={() => setPage("location")} />;
+    return <Notifications onContinue={() => 
+      setPage("location")} />;
 
   if (page === "location")
-    return <Location onContinue={() => setPage("cookies")} />;
+    return <Location onContinue={() => 
+      setPage("cookies")} />;
 
   if (page === "cookies")
-    return <Cookies onContinue={() => setPage("maps")} />;
+    return <Cookies onContinue={() => 
+      setPage("maps")} />;
 
   if (page === "maps")
   return (
@@ -63,13 +67,15 @@ export default function App() {
   if (page === "washerlist")
   return (
     <WasherList
-      onContinue={() => setPage("vehicle")}
+      onContinue={() => 
+        setPage("vehicle")}
     />
   );
 
   
   if (page === "vehicle")
-    return <VehicleSelection onContinue={() => setPage("booking")} />;
+    return <VehicleSelection onContinue={() => 
+      setPage("booking")} />;
 
   if (page === "booking")
   return (
