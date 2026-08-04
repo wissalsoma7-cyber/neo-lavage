@@ -8,41 +8,23 @@ export default function Tracking({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
-        gap: 15,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
       <h2>Suivi du laveur</h2>
 
-      <div
-        style={{
-          width: "100%",
-          maxWidth: 350,
-          height: 250,
-          border: "2px solid #0A84FF",
-          borderRadius: 12,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        Carte Google Maps
-      </div>
+      <p>Le laveur est en route.</p>
 
-      <p>🚗 Le laveur est en route.</p>
+      <p>Temps estimé : 12 minutes.</p>
 
-      <p>⏱ Temps estimé : 12 minutes</p>
-
-      <button>📞 Appeler</button>
-
-      <button>💬 WhatsApp</button>
+      <p>Distance restante : 2,4 km.</p>
 
       <button onClick={onContinue}>
-        Le lavage est terminé
+        Mission terminée
       </button>
     </div>
   );
