@@ -72,10 +72,17 @@ export default function App() {
   return (
     <WasherList
       onContinue={() => 
-        setPage("washer")}
+        setPage("WasherDetails")}
     />
   );
 
+  if (page === "WasherDetails")
+  return (
+    <WasherDetails
+      onContinue={() => 
+        setPage("washer")}
+    />
+  );
   
   if (page === "vehicle")
     return <VehicleSelection 
