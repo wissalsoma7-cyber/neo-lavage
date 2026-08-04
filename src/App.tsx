@@ -72,7 +72,7 @@ export default function App() {
   return (
     <WasherList
       onContinue={() => 
-        setPage("vehicle")}
+        setPage("washer")}
     />
   );
 
@@ -102,7 +102,7 @@ export default function App() {
   return (
     <WasherDetails
       onContinue={() => 
-        setPage("payment")}
+        setPage("vehicule")}
     />
   );
 
