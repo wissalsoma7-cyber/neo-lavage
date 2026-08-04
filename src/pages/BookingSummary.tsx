@@ -12,12 +12,12 @@ export default function BookingSummary({
         justifyContent: "center",
         padding: 20,
         background: "#F4F9FF",
-        gap: 15,
+        gap: 20,
       }}
     >
       <h2>Résumé de la réservation</h2>
 
-      <p><strong>Laveur :</strong> Ahmed</p>
+      <p><strong>Laveur :</strong> Ahmed Benali</p>
 
       <p><strong>Véhicule :</strong> Voiture</p>
 
@@ -25,12 +25,12 @@ export default function BookingSummary({
 
       <p><strong>Heure :</strong> 15:30</p>
 
-      <p><strong>Adresse :</strong> Votre position actuelle</p>
+      <p><strong>Adresse :</strong> Position actuelle</p>
 
       <p><strong>Prix :</strong> 120 DH</p>
 
       <button onClick={onContinue}>
-        Confirmer et payer
+        Continuer vers le laveur
       </button>
     </div>
   );
