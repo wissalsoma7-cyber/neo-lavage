@@ -8,37 +8,33 @@ export default function Payment({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
-      <h2>Paiement sécurisé</h2>
+      <h2>Paiement</h2>
 
-      <input
-        type="text"
-        placeholder="Nom du titulaire"
-      />
+      <p><strong>Montant :</strong> 120 DH</p>
 
-      <input
-        type="text"
-        placeholder="Numéro de carte"
-      />
+      <p>Choisissez votre mode de paiement.</p>
 
-      <input
-        type="text"
-        placeholder="MM/AA"
-      />
+      <button>
+        💳 Carte bancaire
+      </button>
 
-      <input
-        type="password"
-        placeholder="CVV"
-      />
+      <button>
+        📱 Paiement mobile
+      </button>
+
+      <button>
+        💵 Paiement en espèces
+      </button>
 
       <button onClick={onContinue}>
-        Payer maintenant
+        Valider le paiement
       </button>
     </div>
   );
