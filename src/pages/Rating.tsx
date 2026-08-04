@@ -1,4 +1,4 @@
-export default function Rating({
+export default function Confirmation({
   onContinue,
 }: {
   onContinue: () => void;
@@ -8,26 +8,29 @@ export default function Rating({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
-        gap: 15,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
-      <h2>Évaluez votre lavage</h2>
+      <h2>Réservation confirmée</h2>
 
-      <p>Votre avis nous aide à améliorer le service.</p>
+      <p>
+        Votre réservation a été enregistrée avec succès.
+      </p>
 
-      <button>⭐⭐⭐⭐⭐</button>
+      <p>
+        Un laveur est en route vers votre position.
+      </p>
 
-      <textarea
-        placeholder="Laissez un commentaire (facultatif)"
-      />
+      <p>
+        Vous pouvez suivre son déplacement en temps réel.
+      </p>
 
       <button onClick={onContinue}>
-        Envoyer mon avis
+        Suivre le laveur
       </button>
     </div>
   );
