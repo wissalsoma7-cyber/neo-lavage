@@ -8,20 +8,16 @@ export default function GoogleLogin({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
       <h2>Connexion Google</h2>
 
-      <button>Choisir un compte Google</button>
-
-      <button>Utiliser un autre compte</button>
-
-      <button>Annuler</button>
+      <p>Sélectionnez votre compte Google.</p>
 
       <button onClick={onContinue}>
         Continuer
