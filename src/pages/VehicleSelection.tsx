@@ -10,9 +10,8 @@ export default function VehicleSelection({
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center",
-        background: "#F4F9FF",
         padding: 20,
+        background: "#F4F9FF",
         gap: 15,
       }}
     >
@@ -20,17 +19,11 @@ export default function VehicleSelection({
 
       <button>🚗 Voiture</button>
 
+      <button>🚙 SUV</button>
+
       <button>🏍 Moto</button>
 
-      <button>🚚 Camion</button>
-
       <button>🚐 Utilitaire</button>
-
-      <button>🚲 Vélo</button>
-
-      <button>🛻 Autre véhicule</button>
-
-      <br />
 
       <button onClick={onContinue}>
         Continuer
