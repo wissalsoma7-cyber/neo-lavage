@@ -33,7 +33,7 @@ export default function App() {
     | "booking"
     | "bookingsummary"
     | "washer"
-    | WasherDetails"
+    | "WasherDetails"
     | "payment"
     | "confirmation"
     | "tracking"
@@ -91,7 +91,8 @@ export default function App() {
   if (page === "washer")
   return (
     <WasherDetails
-      onContinue={() => setPage("payment")}
+      onContinue={() => 
+        setPage("payment")}
     />
   );
 
