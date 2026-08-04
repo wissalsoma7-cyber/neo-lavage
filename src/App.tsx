@@ -1,7 +1,3 @@
-import WasherDetails from "./pages/WasherDetails";
-import Rating from "./pages/Rating";
-import Tracking from "./pages/Tracking";
-import History from "./pages/History";
 import AppleLogin from "./pages/AppleLogin";
 import EmailLogin from "./pages/EmailLogin";
 import CodeVerification from "./pages/CodeVerification";
@@ -12,11 +8,15 @@ import Location from "./pages/Location";
 import Cookies from "./pages/Cookies";
 import GoogleMaps from "./pages/GoogleMaps";
 import WasherList from "./pages/WasherList";
+import WasherDetails from "./pages/WasherDetails";
 import VehicleSelection from "./pages/VehicleSelection";
 import Booking from "./pages/Booking";
 import BookingSummary from "./pages/BookingSummary";
 import Payment from "./pages/Payment";
 import Confirmation from "./pages/Confirmation";
+import Rating from "./pages/Rating";
+import History from "./pages/History";
+import Rating from "./pages/Rating";
 export default function App() {
   const [page, setPage] = useState<"tracking"
     | "home"
