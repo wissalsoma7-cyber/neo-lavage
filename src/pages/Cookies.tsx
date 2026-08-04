@@ -8,24 +8,22 @@ export default function Cookies({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
       <h2>Cookies</h2>
 
       <p>
-        Néo Lavage utilise des cookies pour améliorer votre expérience.
+        Nous utilisons des cookies pour améliorer votre expérience sur Néo Lavage.
       </p>
 
       <button onClick={onContinue}>
         Accepter
       </button>
-
-      <button>Refuser</button>
     </div>
   );
 }
