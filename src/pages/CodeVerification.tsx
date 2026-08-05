@@ -8,31 +8,23 @@ export default function CodeVerification({
       style={{
         height: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         flexDirection: "column",
-        background: "#F4F9FF",
+        justifyContent: "center",
         padding: 20,
+        background: "#F4F9FF",
+        gap: 20,
       }}
     >
       <h2>Code de vérification</h2>
 
-      <p>
-        Un code à 6 chiffres a été envoyé à votre adresse e-mail.
-      </p>
-
       <input
         type="text"
-        maxLength={6}
         placeholder="123456"
+        maxLength={6}
       />
 
       <button onClick={onContinue}>
         Vérifier
-      </button>
-
-      <button>
-        Renvoyer le code
       </button>
     </div>
   );
