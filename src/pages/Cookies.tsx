@@ -4,21 +4,11 @@ export default function Cookies({
   onContinue: () => void;
 }) {
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        padding: 20,
-        background: "#F4F9FF",
-        gap: 20,
-      }}
-    >
+    <div style={{ padding: 20 }}>
       <h2>Cookies</h2>
 
       <p>
-        Nous utilisons des cookies pour améliorer votre expérience sur Néo Lavage.
+        Acceptez les cookies pour améliorer votre expérience.
       </p>
 
       <button onClick={onContinue}>
