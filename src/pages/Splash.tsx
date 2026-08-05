@@ -1,4 +1,8 @@
-export default function Splash() {
+export default function Splash({
+  onContinue,
+}: {
+  onContinue: () => void;
+}) {
   return (
     <div
       style={{
@@ -8,12 +12,23 @@ export default function Splash() {
         alignItems: "center",
         flexDirection: "column",
         background: "#0A84FF",
-        color: "white"
+        color: "white",
       }}
     >
-      <h1>NÉO LAVAGE</h1>
+      <h1>Néo Lavage</h1>
 
-      <p>Chargement...</p>
+      <p>Votre partenaire de lavage intelligent.</p>
+
+      <button
+        onClick={onContinue}
+        style={{
+          marginTop: 30,
+          padding: 12,
+          fontSize: 18,
+        }}
+      >
+        Commencer
+      </button>
     </div>
   );
 }
