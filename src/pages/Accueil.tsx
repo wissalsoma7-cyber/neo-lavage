@@ -2,12 +2,14 @@ type Props = {
   onGoogle: () => void;
   onApple: () => void;
   onEmail: () => void;
+  onAdmin: () => void;
 };
 
 export default function Home({
   onGoogle,
   onApple,
   onEmail,
+  onAdmin,
 }: Props) {
   return (
     <div
@@ -35,6 +37,9 @@ export default function Home({
       <button onClick={onEmail}>
         Continuer avec votre adresse e-mail
       </button>
+      <button onClick={onAdmin}>
+  Continuer en tant qu'administrateur
+</button>
     </div>
   );
 }
